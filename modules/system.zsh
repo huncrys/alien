@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-
 alien_storage_info(){
   fs=`df -h . | tail -1 | awk '{print $1}' | sed "s|\.|•|g" `;
   size=`df -h . | tail -1 | awk '{print $2}' | sed "s|\.|•|g" `;

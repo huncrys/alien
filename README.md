@@ -1,15 +1,15 @@
 # alien
 
-[![GitHub tag](https://img.shields.io/github/tag/eendroroy/alien-minimal.svg)](https://github.com/eendroroy/alien-minimal/tags)
+[![GitHub tag](https://img.shields.io/github/tag/huncrys/alien-minimal.svg)](https://github.com/huncrys/alien-minimal/tags)
 
-[![Contributors](https://img.shields.io/github/contributors/eendroroy/alien.svg)](https://github.com/eendroroy/alien/graphs/contributors)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/eendroroy/alien/master.svg)](https://github.com/eendroroy/alien)
-[![license](https://img.shields.io/github/license/eendroroy/alien.svg)](https://github.com/eendroroy/alien/blob/master/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/huncrys/alien.svg)](https://github.com/huncrys/alien/graphs/contributors)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/huncrys/alien/master.svg)](https://github.com/huncrys/alien)
+[![license](https://img.shields.io/github/license/huncrys/alien.svg)](https://github.com/huncrys/alien/blob/master/LICENSE)
 
-[![GitHub issues](https://img.shields.io/github/issues/eendroroy/alien.svg)](https://github.com/eendroroy/alien/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/eendroroy/alien.svg)](https://github.com/eendroroy/alien/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/eendroroy/alien.svg)](https://github.com/eendroroy/alien/pulls)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eendroroy/alien.svg)](https://github.com/eendroroy/alien/pulls?q=is%3Apr+is%3Aclosed)
+[![GitHub issues](https://img.shields.io/github/issues/huncrys/alien.svg)](https://github.com/huncrys/alien/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/huncrys/alien.svg)](https://github.com/huncrys/alien/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/huncrys/alien.svg)](https://github.com/huncrys/alien/pulls)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/huncrys/alien.svg)](https://github.com/huncrys/alien/pulls?q=is%3Apr+is%3Aclosed)
 
 **alien** theme is faster than a lot other themes. **Why?** It updates part of the prompt asyncronously - the time consuming processings like git status checking, git dirty copy checking etc. **How?** It starts a background job for these process, and in the mean time draws initial prompt and lets you use the terminal as you would normally.
 
@@ -26,63 +26,24 @@ Add the following line to your .zshrc depending on your zsh plugin manager
 
 ##### [antigen](https://github.com/zsh-users/antigen):
 
-    antigen theme eendroroy/alien alien
+    antigen theme huncrys/alien alien
 
 ##### [zgen](https://github.com/tarjoilija/zgen):
 
-    zgen load eendroroy/alien
+    zgen load huncrys/alien
 
 ##### [zplug](https://github.com/zplug/zplug):
 
-    zplug "eendroroy/alien"
+    zplug "huncrys/alien"
 
 ##### [oh-my-zsh: Overriding and Adding Themes](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization#overriding-and-adding-themes)
 
-##### Manually clonning
+##### Manually cloning
 
 ```bash
-git clone https://github.com/eendroroy/alien.git
+git clone https://github.com/huncrys/alien.git
 cd alien
 git submodule update --init --recursive
-```
-
-## screencast
-
-[![asciicast](https://asciinema.org/a/121489.png)](https://asciinema.org/a/121489)
-
-###### color scheme
-
-**add all configurations before plugin definitions**
-
-you can chose from 3 different color schemes (blue is the default)
-
-in ~/.zshrc just add any from the following three lines before your 'antigen theme ...' line
-
-    export ALIEN_THEME="blue"
-
-    export ALIEN_THEME="green"
-
-    export ALIEN_THEME="red"
-
-**Custom Color**
-
-```bash
-color0=018      # time background color
-color1=226      # normal background color
-color1r=196     # normal error background color
-color2=254      # time foreground color
-color3=026      # user background color
-color4=254      # user foreground color
-color5=045      # dir background color
-color6=019      # dir foreground color
-color7=238      # vcs background color
-color8=228      # prompt foreground color
-color9=051      # vcs foreground color
-color10=244     # git left-right background color
-color11=255     # git left-right foreground color
-color12=253     # dirty copy background color
-color13=016     # dirty copy foreground color
-color14=245     # venv color
 ```
 
 ###### nerd font
@@ -110,7 +71,6 @@ _Note: this overrides `USE_NERD_FONT` configuration._
 
     export PLIB_GIT_TRACKED_COLOR=green
     export PLIB_GIT_UNTRACKED_COLOR=red
-
 
 ## Libraries Used
 

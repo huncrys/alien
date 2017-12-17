@@ -38,7 +38,7 @@ Add the following line to your .zshrc depending on your zsh plugin manager
 
 ##### [oh-my-zsh: Overriding and Adding Themes](https://github.com/robbyrussell/oh-my-zsh/wiki/Customization#overriding-and-adding-themes)
 
-##### Manually cloning
+##### Manually clonning
 
 ```bash
 git clone https://github.com/huncrys/alien.git
@@ -46,13 +46,26 @@ cd alien
 git submodule update --init --recursive
 ```
 
-###### nerd font
+**Custom Color**
 
-Enable Nerd Font
-
-    export USE_NERD_FONT=1
-
-_*Note: [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)*_
+```bash
+color0=018      # time background color
+color1=226      # normal background color
+color1r=196     # normal error background color
+color2=254      # time foreground color
+color3=026      # user background color
+color4=254      # user foreground color
+color5=045      # dir background color
+color6=019      # dir foreground color
+color7=238      # vcs background color
+color8=228      # prompt foreground color
+color9=051      # vcs foreground color
+color10=244     # git left-right background color
+color11=255     # git left-right foreground color
+color12=253     # dirty copy background color
+color13=016     # dirty copy foreground color
+color14=245     # venv color
+```
 
 ### promptlib-zsh Configs:
 
@@ -65,8 +78,6 @@ _*Note: [Nerd fonts](https://github.com/ryanoasis/nerd-fonts)*_
     export PLIB_GIT_PUSH_SYM=↑
     export PLIB_GIT_PULL_SYM=↓
 
-_Note: this overrides `USE_NERD_FONT` configuration._
-
 #### customize colors
 
     export PLIB_GIT_TRACKED_COLOR=green
@@ -74,9 +85,9 @@ _Note: this overrides `USE_NERD_FONT` configuration._
 
 ## Libraries Used
 
-- ['256color'](https://github.com/chrissicool/zsh-256color) by **[@chrissicool](https://github.com/chrissicool)**
-- ['zsh-async'](https://github.com/mafredri/zsh-async) by **[@mafredri](https://github.com/mafredri)**
-- ['promptlib-zsh'](https://github.com/eendroroy/promptlib-zsh) by **[@eendroroy](https://github.com/eendroroy)**
+- [256color](https://github.com/chrissicool/zsh-256color) by **[@chrissicool](https://github.com/chrissicool)**
+- [zsh-async](https://github.com/mafredri/zsh-async) by **[@mafredri](https://github.com/mafredri)**
+- [promptlib-zsh](https://github.com/eendroroy/promptlib-zsh) by **[@eendroroy](https://github.com/eendroroy)**
 
 ## Author
 

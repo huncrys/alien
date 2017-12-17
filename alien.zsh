@@ -21,11 +21,7 @@ function precmd(){
   setopt prompt_subst
 
   RPROMPT=''
-  if [[ "${DEFAULT_USER}" == "${USER}" ]]; then
-    _user=''
-  else
-    _user=`whoami`@`hostname -s`
-  fi
+  _user=`whoami`@`hostname -s`
   
   PROMPT='
 %(?..%K{$color3}%F{$color1r} ✘%f%k)%K{$color3}%F{$color4} $_user %f%k%K{$color5}%F{$color3}%f%k%K{$color5}%F{$color6} %(7~|%-1~/…/%5~|%6~) %f%k%F{$color5}%f

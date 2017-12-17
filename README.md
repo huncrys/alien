@@ -1,6 +1,6 @@
 # alien
 
-[![GitHub tag](https://img.shields.io/github/tag/huncrys/alien-minimal.svg)](https://github.com/huncrys/alien-minimal/tags)
+[![GitHub tag](https://img.shields.io/github/tag/huncrys/alien.svg)](https://github.com/huncrys/alien/tags)
 
 [![Contributors](https://img.shields.io/github/contributors/huncrys/alien.svg)](https://github.com/huncrys/alien/graphs/contributors)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/huncrys/alien/master.svg)](https://github.com/huncrys/alien)
